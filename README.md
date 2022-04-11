@@ -1,5 +1,5 @@
 # online-project-management-system
-An online project management system using Eclipse IDE, MySQL and Java. 
+An online project management system using Eclipse IDE, MySQL and Java.(which uses MVC architecture)
 
 Object Oriented Analysis and Design with Java (UE19CS353) mini-project.
 
