@@ -4,7 +4,7 @@ An online project management system using Eclipse IDE, MySQL and Java.
 Object Oriented Analysis and Design with Java (UE19CS353) mini-project.
 
 ## Requirements
-1. Eclipse IDE.
+1. Eclipse IDE.(for java developers)
 2. MySQL database containing login_info and product tables. Note: These tables should coincide with the ones used in the Java program. 
 3. Tomcat 9.0 server installation.
 4. Java version 8.0 or higher.
