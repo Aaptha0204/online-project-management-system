@@ -12,7 +12,7 @@ Object Oriented Analysis and Design with Java (UE19CS353) mini-project.
 ## Running the code
 To run the code, you must first set up the runtime environments, add all the necessary libraries and set the class path to the ojdbc jar and mysql-connector-java file in your system. 
 
-## Done by:
+### Done by:
 Aaptha B V - PES2UG19CS003
 
 Anagha Srinivasa - PES2UG19CS036
