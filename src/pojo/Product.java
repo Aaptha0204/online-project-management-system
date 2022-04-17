@@ -26,7 +26,7 @@ public class Product {
 		this.productColor = productColor;
 		
 	}
-
+	//getter and setter methods:
 	public String getProductId() {
 		return productId;
 	}
@@ -90,7 +90,6 @@ public class Product {
 	public void setProductStatus(String productStatus) {
 		this.productStatus = productStatus;
 	}
-	
 	@Override
 	public String toString() {
 		/*return "Product [productId=" + productId + ", productName=" + productName + ", productCategory="
