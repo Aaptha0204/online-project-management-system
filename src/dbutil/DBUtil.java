@@ -13,7 +13,7 @@ public class DBUtil {
 			//Class.forName("oracle.jdbc.driver.OracleDriver");
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/opms","root","root");
-		    //conn = DriverManager.getConnection("jdbc:mysql://192.100.0.000:3306/opms","root","root");
+		    /*conn = DriverManager.getConnection("jdbc:mysql://192.100.0.000:3306/opms","root","root");*/
 		    
 		
 		}
@@ -29,8 +29,11 @@ public class DBUtil {
 	{
 		try {
 			conn.close();
-		} catch (SQLException e) {
+		} 
+		
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
 	}
 }
