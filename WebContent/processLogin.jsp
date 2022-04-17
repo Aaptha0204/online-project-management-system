@@ -3,6 +3,7 @@
 <%
 
 String userName = request.getParameter("userName");
+
 String password = request.getParameter("password");
 
 if(LoginDAO.isUserValid(new LoginInfo(userName,password)))
@@ -11,6 +12,7 @@ if(LoginDAO.isUserValid(new LoginInfo(userName,password)))
 	session.setMaxInactiveInterval(200); 
 	response.sendRedirect("home.jsp"); 
 }
+
 else 
 {
 	response.sendRedirect("loginFailed.jsp"); 
