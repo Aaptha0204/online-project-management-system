@@ -19,4 +19,4 @@ Anagha Srinivasa - PES2UG19CS036
 
 Ananya M Gupta - PES2UG19CS039
 
-Note: All members contributed equally. 
+Note: All members contributed equally to this project. 
