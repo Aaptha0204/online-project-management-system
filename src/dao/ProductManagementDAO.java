@@ -1,11 +1,8 @@
 package dao;
-
-
 import java.sql.*;
 import java.util.*;
 import dbutil.DBUtil;
 import pojo.Product;
-
 
 public class ProductManagementDAO {
 
@@ -45,6 +42,7 @@ public static Product getProductById(String productId)
 		PreparedStatement ps= conn.prepareStatement("SELECT * FROM product WHERE prod_id = ?");
 		ps.setString(1, productId);
 		ResultSet rs = ps.executeQuery();
+		
 	while(rs.next())
 	{
 		product = new Product(rs.getString("prod_id"),rs.getString("prod_name"),rs.getString("prod_category"),rs.getInt("prod_price"),rs.getInt("prod_usability"),rs.getInt("prod_quantity"),rs.getString("prod_color"),rs.getString("prod_status"));
@@ -56,6 +54,7 @@ public static Product getProductById(String productId)
 	}
 	
 	return product;
+	
 }
 
 
@@ -81,6 +80,7 @@ public static int addProduct(Product product)
 		e.printStackTrace();
 	}
 	return status;
+	
 }
 
 public static int updateProduct(Product product)
@@ -110,17 +110,16 @@ public static int updateProduct(Product product)
 public static int deleteProduct(String productId)
 {
 	int status = 0;
-	try
-	{
+	try{
 		Connection conn = DBUtil.getConnection();
 		PreparedStatement ps= conn.prepareStatement("DELETE FROM product where prod_id = ?");
 		ps.setString(1, productId);
 		status = ps.executeUpdate();
 	}
-	catch(Exception e)
-	{
+	catch(Exception e){
 		e.printStackTrace();
 	}
 		return status;
+	
 	}
 }
